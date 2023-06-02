@@ -282,11 +282,6 @@ export default function Index() {
                 </div>
               </div>
             </div>
-
-            {/* footer */}
-            {/* <div className="pt-0">
-              <Footer />
-            </div> */}
           </div>
         </div>
       </main>
