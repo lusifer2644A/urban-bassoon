@@ -153,7 +153,7 @@ export default function Index() {
 
             {/* Section 2 */}
             <div className="hidden md:block main-heading2 headingColor2 text-justify md:text-center  max-w-6xl mx-auto pt-36 ">
-              Seller Central's Features
+              {` Seller Central's Features`}
             </div>
             <div className="flex justify-center">
               <div className="hidden md:flex flex-row flex-wrap gap-8 justify-center py-10 max-w-[1500px]">
@@ -209,7 +209,7 @@ export default function Index() {
               </div>
               <div className="block md:hidden main-light-background mt-10">
                 <div className="main-heading2 headingColor2 text-center w-full max-w-6xl mx-auto pt-10 ">
-                  Seller Central's Features
+                  {` Seller Central's Features`}
                 </div>
                 <div className="  flex flex-row flex-wrap gap-4 justify-center max-w-[1500px] ">
                   {data.features.map((feat, idx) => {
