@@ -111,16 +111,16 @@ export default function Index() {
   const onReCAPTCHAChange = (captchaCode) => {
     // If the reCAPTCHA code is null or undefined indicating that
     // the reCAPTCHA was expired then return early
-    if(!captchaCode) {
+    if (!captchaCode) {
       return;
     }
-    // Else reCAPTCHA was executed successfully so proceed with the 
+    // Else reCAPTCHA was executed successfully so proceed with the
     // alert
     //alert(`Hey, ${email}`);
-    // Reset the reCAPTCHA so that it can be executed again if user 
+    // Reset the reCAPTCHA so that it can be executed again if user
     // submits another email.
     //recaptchaRef.current.reset();
-  }
+  };
 
   const handleChange = (e) => {
     setState((old) => {
@@ -133,8 +133,6 @@ export default function Index() {
 
   return (
     <>
-      
-
       <main className="bg-light dark:bg-dark overflow-x-hidden">
         {/* Header */}
 
@@ -146,7 +144,7 @@ export default function Index() {
             {/* hero */}
             <div className="flex flex-col justify-center  items-center py-16 md:py-40 px-5">
               <h1 className="main-heading2 md:main-heading headingColor2 text-center">
-                Join Our Global Network 
+                Join Our Global Network
               </h1>
               <h1 className="subtitle text-center pt-4 max-w-[700px]  mt-5">
                 Are you a brand eager to unlock and leverage your worldwide
@@ -171,8 +169,8 @@ export default function Index() {
                     facilitating your growth on an international scale.
                   </p>
                   <p className="subtitle heading-color text-center md:text-start">
-                    We're actively seeking partners who can contribute to a
-                    seamless global e-commerce experience.
+                    {`We're actively seeking partners who can contribute to a
+                    seamless global e-commerce experience.`}
                   </p>
                 </div>
 
@@ -181,7 +179,7 @@ export default function Index() {
                   <p className="subtitle2 heading-color">
                     Get in touch with us
                   </p>
-                  <form onSubmit={handleSubmit} > 
+                  <form onSubmit={handleSubmit}>
                     <div className="flex flex-col gap-3 md:gap-5 justify-center ">
                       <div>
                         <select
@@ -270,7 +268,6 @@ export default function Index() {
                         ref={recaptchaRef}
                         size="normal"
                         data-type="image"
-                       
                         sitekey={process.env.NEXT_PUBLIC_API_KEY}
                         onChange={onReCAPTCHAChange}
                       />
